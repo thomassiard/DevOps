@@ -10,3 +10,8 @@ jobs:
     steps:
     - name: Hello World
       run: echo "Hello World"
+
+    - name: Environment Variables
+      env:
+        CURRENT_DATE: '2024-10-20'
+      run: echo "$CURRENT_DATE"
