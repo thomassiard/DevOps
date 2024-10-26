@@ -26,4 +26,15 @@ jobs:
 
     - name: List Directory Content
       run: ls -al
-      
+
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: List Repository Content
+      run: ls -al
+
+    - name: List Environment Variables
+      run: env
+
+    - name: List Processes
+      run: ps aux
